@@ -9,7 +9,7 @@
 | :sparkles: Nome        | **Regressão Linear: testando relações e prevendo resultados**
 | :label: Tecnologias | python
 | :rocket: URL         | 
-| :fire: Desafio     | 
+| :fire: Desafio     | Conteúdo do 5º [curso](https://www.alura.com.br/curso-online-data-science-modelo-regressao-linear) da formação [Data Science](https://www.alura.com.br/formacao-data-science)
 
 
 O que aprendi no 5º curso da formação Data Science (Alura)
