@@ -17,6 +17,28 @@ O que aprendi no 5º curso da formação Data Science (Alura)
 
 # Sobre o curso 📚
 
+Continuando a pôr em prática o que aprendi nos cursos da formação Data Science da [Alura](https://www.alura.com.br/), já passei pela análise e exploração dos dados, agora chegou a vez de falar sobre os modelos de previsão. Neste curso, também ministrado pelo instrutor [Rodrigo Dias](https://www.linkedin.com/in/rodrigo-fernando-dias-118181120/), aprendi:
+
+- sobre a importância das visualizações para compreender a distribuição dos dados;
+
+- a diferença entre variáveis dependentes e explicativas;
+
+- a importância de separar os dados em conjuntos de treino e teste;
+
+- a criar modelos que relacionam as variáveis dependentes e explicativas, permitindo previsões e análises estatísticas;
+
+- compreender os erros em função dos resíduos e métricas, ou seja, identificar possíveis discrepâncias entre as previsões e os valores reais;
+
+- finalizando com a comparação e salvamento dos melhores modelos. 
+
+
+
+
+
+
+
+
+
 # Minha prática 👩🏻‍💻
 
 # Conclusão 🏁
