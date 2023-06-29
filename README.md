@@ -17,7 +17,6 @@
 
 ![](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/ff56c32e-f5c1-4882-a49f-188f758c489c)
 
-O que aprendi no 5º curso da formação Data Science (Alura)
 
 # Sobre o curso 📚
 
