@@ -34,7 +34,7 @@ Continuando a pôr em prática o que aprendi nos cursos da formação Data Scien
 
 - finalizando com a comparação e salvamento dos melhores modelos. 
 
-
+Desta vez, utilizamos dados disponíveis no [Kaggle](https://www.kaggle.com/datasets/dongeorge/beer-consumption-sao-paulo) sobre o consumo de cerveja em uma região na cidade de São Paulo.
 
 
 
