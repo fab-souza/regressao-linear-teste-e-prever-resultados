@@ -45,3 +45,7 @@ Desta vez, utilizamos dados disponíveis no [Kaggle](https://www.kaggle.com/data
 # Minha prática 👩🏻‍💻
 
 # Conclusão 🏁
+
+
+## Ferramentas utilizadas 🧰
+
