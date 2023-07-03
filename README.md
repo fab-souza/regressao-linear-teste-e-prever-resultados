@@ -36,10 +36,11 @@ Continuando a pôr em prática o que aprendi nos cursos da formação Data Scien
 
 Desta vez, utilizamos dados disponíveis no [Kaggle](https://www.kaggle.com/datasets/dongeorge/beer-consumption-sao-paulo) sobre o consumo de cerveja em uma região na cidade de São Paulo.
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/6139fb64-2328-4665-a099-8c8d3e119696)
 
+Ao longo do curso, desenvolvemos um modelo de Machine Learning capaz de fazer a previsão do consumo médio de cerveja, utilizando a Regressão Linear. 
 
-
-
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/7bf21f17-e69c-48f0-abc6-1c4ee2357b04)
 
 
 # Minha prática 👩🏻‍💻
