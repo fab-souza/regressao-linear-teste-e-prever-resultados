@@ -47,7 +47,7 @@ Ao longo do curso, desenvolvemos um modelo de Machine Learning capaz de fazer a 
 
 Para esta prática, pensei em utilizar um dataset sobre consumo de energia, também disponibilizado no [Kaggle](https://www.kaggle.com/datasets/fedesoriano/electric-power-consumption). 
 Ele contém informações sobre os registros de temperatura, umidade, velocidade do vento e o consumo de energia de 3 regiões da cidade Tetouan, situada no norte do Marrocos. 
-Os registros começaram em 1º de janeiro de 2017, vão até o dia 30 de dezembro do mesmo ano e com um intervalo de 10 minutos entre eles.
+Os registros começaram em 1º de janeiro de 2017 e vão até o dia 30 de dezembro do mesmo ano, com um intervalo de 10 minutos entre eles.
 
 ![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/82524c48-be9a-4d6c-9efe-4e3366e1bb81)
 
