@@ -51,6 +51,10 @@ Os registros começaram em 1º de janeiro de 2017 e vão até o dia 30 de dezemb
 
 ![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/82524c48-be9a-4d6c-9efe-4e3366e1bb81)
 
+Na descrição do dataset, não é informado quais são as unidades de medida das variáveis, mas uma delas possui um exemplo em °C. Então, vou supor que as variáveis seguem as mesmas unidades de medidas usadas aqui no Brasil.
+
+* Temperatura = °C
+* Umidade = %
 
 
 
