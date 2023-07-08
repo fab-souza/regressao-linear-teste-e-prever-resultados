@@ -61,8 +61,9 @@ Ao fazer um *.describe()* do DataFrame, vi que o valor mínimo dela é **0,05** 
 
 A página [Clima de Ensinar](https://www.climadeensinar.com/post/2016/09/08/como-%C3%A9-medida-a-velocidade-do-vento) possui uma tabela que ilustra como classificar o vento de acordo com sua velocidade nas três unidades de medida, m/s, km/h e nós.
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/e8e89a11-920a-4b59-b47e-02e96739d864)
 
-
+Se a unidade de medida do dataset fosse em km/h, ou em nós, a cidade não teria ventos diferentes de *brisa leve*, pois este tipo de vento vai até 12km/h, ou 6 nós. Se estiver em m/s, os ventos podem ser classificados chegar até *brisa moderada*, que vão até 7,4m/s.
 
 
 
