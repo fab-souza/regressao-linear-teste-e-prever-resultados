@@ -65,7 +65,7 @@ A página [Clima de Ensinar](https://www.climadeensinar.com/post/2016/09/08/como
 
 Se a unidade de medida do dataset fosse em km/h, ou em nós, a cidade não teria ventos diferentes de *brisa leve*, pois este tipo de vento vai até 12km/h, ou 6 nós. Se estiver em m/s, os ventos podem ser classificados chegar até *brisa moderada*, que vão até 7,4m/s.
 
-
+Fiz uma pesquisa no Google sobre a cidade, onde tive acesso ao clima da região, com registro da temperatura, umidade e velocidade do vento (em km/h). 
 
 
 
