@@ -67,6 +67,7 @@ Se a unidade de medida do dataset fosse em km/h, ou em nós, a cidade não teria
 
 Fiz uma pesquisa no Google sobre a cidade, onde tive acesso ao clima da região, com registro da temperatura, umidade e velocidade do vento (em km/h). 
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/0d56a9d3-ab3c-464a-b2ef-f5baabe87141)
 
 
 
