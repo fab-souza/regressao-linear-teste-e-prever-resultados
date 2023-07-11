@@ -59,6 +59,8 @@ Na descrição do dataset, não é informado quais são as unidades de medida da
 E aqui veio uma variável um pouco complicada de determinar. Para a velocidade do vento, eu encontrei páginas citando o uso de m/s, km/h e nós (kt). 
 Ao fazer um *.describe()* do DataFrame, vi que o valor mínimo dela é **0,05** e seu máximo é de **6,48**. 
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/7c50d4b2-2dd3-4705-83ff-9d935ac86eab)
+
 A página [Clima de Ensinar](https://www.climadeensinar.com/post/2016/09/08/como-%C3%A9-medida-a-velocidade-do-vento) possui uma tabela que ilustra como classificar o vento de acordo com sua velocidade nas três unidades de medida, m/s, km/h e nós.
 
 ![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/e8e89a11-920a-4b59-b47e-02e96739d864)
