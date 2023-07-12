@@ -71,8 +71,16 @@ Fiz uma pesquisa no Google sobre a cidade, onde tive acesso ao clima da região,
 
 ![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/0d56a9d3-ab3c-464a-b2ef-f5baabe87141)
 
+Para transformar km/h para m/s, divido por 3,6.  
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/21cb5c39-fac4-477e-9d5c-b927d46e021b)
 
+Fonte: [Prepare Enem](https://www.preparaenem.com/fisica/como-passar-m-s-para-km-h.htm)
+
+Fazendo 21 km/h para m/s, tenho 5,83 m/s, valor este que está dentro da faixa registrada no dataset. Portanto:
+
+* Velocidade do vento = m/s
+* Consumo de energia = kWh
 
 
 
