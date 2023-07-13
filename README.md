@@ -82,10 +82,17 @@ Fazendo 21 km/h para m/s, tenho 5,83 m/s, valor este que está dentro da faixa r
 * Velocidade do vento = m/s
 * Consumo de energia = kWh
 
+---
+Com as unidades de medida estabelecidas, iniciei a manipulação do dataset.
+Diferente do dataset usado no curso, neste caso eu não tenho informações como temperatura mínima, média, máxima e se o dia está em um fim de semana ou não. Ao fazer um gráfico de correlação, vi que, com exceção dos **consumos** e **fluxos**, as demais variáveis não possuem correlação superior a 0,5 e decidi adicionar as colunas semelhantes do dataset usado no curso para ver se elas melhoravam.
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/48200778-7c96-45b8-8769-3754ab293c50)
 
+Para criar as variáveis referentes a mínima, média e máxima de algumas colunas, eu poderia fazer igual ao dataset do curso e descobrir o quanto os valores variaram ao longo do dia, mas acho que perderia muitos dados ao fazer essa compactação. Dessa forma, achei melhor agrupar as informações por hora.
 
+O Pandas tem um método que faz a reamostragem de séries temporais, o **resample**. Tive que definir uma regra, que é o intervalo da reamostragem, informar a coluna em forma de *datetime* e, fora do método, o que eu queria de retorno, se é o mínimo, o máximo, etc.
 
+No caso dos **consumos**, eu precisava da soma do que foi registrado no intervalo de 1 hora e defini o retorno da reamostragem como **resultado_soma**. Nas demais colunas, este tipo de reamostragem não seria útil e as excluí.
 
 
 
