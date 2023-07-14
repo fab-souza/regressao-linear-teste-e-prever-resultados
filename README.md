@@ -12,7 +12,7 @@
 | -------------  | --- |
 | :sparkles: Nome        | **Regressão Linear: testando relações e prevendo resultados**
 | :label: Tecnologias | python
-| :rocket: URL         | 
+| :rocket: URL         | [Notebook](https://www.kaggle.com/code/fabianadesouza/regress-o-linear-1)
 | :fire: Desafio     | Conteúdo do 5º [curso](https://www.alura.com.br/curso-online-data-science-modelo-regressao-linear) da formação [Data Science](https://www.alura.com.br/formacao-data-science)
 
 ![](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/ff56c32e-f5c1-4882-a49f-188f758c489c#vitrinedev)
