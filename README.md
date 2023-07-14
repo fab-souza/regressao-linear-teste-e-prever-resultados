@@ -150,5 +150,7 @@ Sem contar que: ‘*Garbage in, garbage out*’
 
 Não adianta tentar fazer milagre com um dataset que não apresenta bons dados, fica de lição para os próximos projetos.
 
+---
+Muito obrigada por chegar até aqui e até a próxima 🤗
 ## Ferramentas utilizadas 🧰
 
