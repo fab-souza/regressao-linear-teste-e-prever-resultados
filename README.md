@@ -94,9 +94,13 @@ O Pandas tem um método que faz a reamostragem de séries temporais, o **resampl
 
 No caso dos **consumos**, eu precisava da soma do que foi registrado no intervalo de 1 hora e defini o retorno da reamostragem como **resultado_soma**. Nas demais colunas, este tipo de reamostragem não seria útil e as excluí.
 
+Para descobrir as médias, também utilizei o **resample** e nomeie seu retorno como **resultado_media**. Neste caso, a reamostragem dos consumos não é relevante e retirei elas do DataFrame. Eu também fiz este procedimento para descobrir os mínimos e máximos destas colunas, para só então, unir todas elas em um dataset maior. 
 
+Na reamostragem de mínimo e máximo, também excluí as 3 colunas do consumo e adicionei um sufixo nas colunas, para diferenciá-las umas das outras. Para evitar a repetição, criei uma função que remove as colunas e adiciona os sufixos.
 
+Na hora de unir os DataFrame, por algum motivo 🤔, algumas colunas tiveram o sufixo retirado. Fiz a alteração dos nomes e terminei de unir os 4 DataFrame.
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/4baeee49-2203-4d15-b4d1-6cf5879d229c)
 
 
 
