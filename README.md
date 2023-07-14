@@ -102,22 +102,53 @@ Na hora de unir os DataFrame, por algum motivo 🤔, algumas colunas tiveram o s
 
 ![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/4baeee49-2203-4d15-b4d1-6cf5879d229c)
 
+Para fazer classificação dos dias, se é no fim de semana ou não, primeiramente, tive que restaurar o índice, como o método **.reset_index**. Depois, utilizei o método **weekday**, do módulo *datetime*, que funciona da seguinte forma, para cada dia, ele retorna um inteiro, por exemplo, segunda-feira é ‘0’ e domingo é ‘6’. Criei uma função que preenche uma nova coluna no dataset com ‘0’ e ‘1’. Para os retornos do **weekday** maiores ou iguais a 5 (sábado e domingo) a coluna é preenchida com ‘1’, caso contrário, recebe ‘0’.
 
+## Nova correlação:
 
+Após todas as manipulações, fiz uma nova correlação e o resultado não foi muito diferente da primeira. Em todas as variáveis reajustadas, não houve grande mudança de valores. A **Temperatura** continua sendo a variável com maior correlação, a **Umidade** continua apresentando valores negativos e **Velocidade do vento**, **Fluxos gerais** e **Fluxos difusos** continuaram com seus valores baixos, próximos à 0. Já para a nova variável, **Fim de semana**, sua correlação com os consumos também fica próximo à 0 nas três subestações, valor positivo apenas para a Zona 3 e negativo nas outras duas.
 
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/a57c51e0-dc09-48d9-96a4-422ec312f460)
 
+## Criando o modelo:
 
+Para dar início a criação do modelo, importei a função **train_test_split**, da biblioteca *Scikit_learn*, que separa os dados em duas partes, *Treino* e *Teste*, um para treinar o modelo e o outro para testá-lo.
 
+Defini o **Consumo_zona3** como **y**, **Temperatura**, **Umidade** e **Velocidade_vento** como **X**, passei ambas para a função **train_test_split**, também defini a porcentagem de dados usados para o teste e um valor para o **random_state**.
 
+Importei métodos destinados à regressão, **linear_model**, **LinearRegression** e **metrics**. Iniciei um modelo de regressão linear vazio e o treinei com os dados de treinamento, **X_train** e **y_train**, com a função **.fit()**
 
+Para avaliar o desempenho do modelo, calculei o coeficiente de determinação com o **.score()**. Ele é um método que retorna a precisão média do modelo ao comparar os valores previstos para *X_train* com os valores verdadeiros de *y_train*. Ou seja, representa a qualidade do ajuste do modelo aos dados e não obtive um bom resultado: **0,238**
 
+Ele trabalha com valores entre 0 e 1, e quanto mais próximo de 1, melhor. Ou seja, não é um bom modelo. Eu já sabia que duas, das três, variáveis independentes não estavam fortemente correlacionadas ao **Consumo**, então, não deveria esperar um bom modelo como resultado.
 
+Em uma forma de tentar melhorar o modelo, troquei a **Umidade** por **Fluxos_gerais**, criei um novo modelo e o coeficiente melhorou um pouco. De 0,238 passou para 0,271. 
 
+Com esta pequena melhora, resolvi tentar usar o novo modelo para prever um consumo de energia. Criei uma variável, *y_previsto*, para receber as previsões de **X_test** e comparei seus resultados com os valores originais, **y_test**, através da função **metrics.r2_score()**. Seu valor também varia entre 0 e 1, ele mostra o quanto o modelo se ajustou aos dados e seu retorno foi de **0,282**. Ou seja, o modelo consegue explicar 28,2% das variações dos dados.
 
+Para finalizar, eu quis ver o quão próximo o modelo chegou de um dado, através de uma previsão pontual. Atribuí a variável *entrada* o primeiro registro em **X_test**, coletando sua temperatura, velocidade do vento e fluxos gerais. Passei para o método **.predict()** a nova variável e ele retornou o valor de **20408.79**.
+
+Ou seja, para um período com temperatura de 27,44 °C, ventos de 4,9 m/s e fluxos gerais de 818, a previsão de consumo é de 20.408,79 kWh.
+
+No entanto, fiz um *.loc* do índice do primeiro registro de **X_test** e vi que o consumo de energia, nas condições registradas, foi de 27.986,61 kWh na Zona 3.
+
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/6f4bfdde-4215-4baa-80ff-1bb9b355f20e)
 
 
 # Conclusão 🏁
 
+Eu já tinha conhecimento de que o **Consumo** não tinha forte correlação com as demais variáveis, exceto **Temperatura**, e mesmo assim continuei trabalhando com este dataset. Como resultado, o modelo não foi capaz de explicar grande parte da variação nos dados. 
+
+Eu ainda poderia tentar utilizar outros modelos de regressão, para ver se os resultados melhoravam, mas não era o foco do curso, eu não quis avançar e bordar o conteúdo de um curso que ainda não fiz um projeto sobre.
+
+Com o projeto finalizado, fui ver o material da aula e percebi que cometi um grande erro:
+-antes de começar qualquer manipulação com os dados, eu deveria ter verificado se os **Consumos** possuem uma distribuição normal. Se ela não fosse atendida, eu não poderia executar testes, pois não teria resultados confiáveis.
+
+![image](https://github.com/fab-souza/regressao-linear-teste-e-prever-resultados/assets/67301805/9b3a264a-62ea-4c5c-9910-80e999a1fbec)
+
+Sem contar que: ‘*Garbage in, garbage out*’
+
+Não adianta tentar fazer milagre com um dataset que não apresenta bons dados, fica de lição para os próximos projetos.
 
 ## Ferramentas utilizadas 🧰
 
